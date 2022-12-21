@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+
+    <div class="header__left">
+        <div class="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="index.html">Main</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link has-subnav" href="#">Articles</a>
+                    <ul class="subnav">
+                        <li>
+                            <a class="subnav_link" href="#">Site create</a>
+                        </li>
+                        <li>
+                            <a class="subnav_link" href="#">Internet marketing</a>
+                        </li>
+                        <li>
+                            <a class="subnav_link" href="#">Video promotion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="text.html">About me</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="text.html">Advertising</a>
+                </li>
+                <li>
+                    <a class="nav_link" href="elf-bar.html">Special offer</a>
+                </li>
+            </ul>
+        </div>
+
+        <button id="sidebarToggle" class="burger"  type="button">
+            <span>Open nav</span>
+        </button>
+    </div>
+
+    <div class="header__right">
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="signIn.html">Login</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Exit</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="search" action="search.html" method="get" >
+            <input class="search_input" type="text" placeholder="Blog search">
+        </form>
+    </div>
+
+</header>
+
+    <!-- sideBar -->
+    <aside class="sideBar" id="sidebar">
+    <div class="sideBar-header">
+        <img src="img/SideBar/samurai.jpg" alt="">
+    </div>
+    <div class="sideBar-content">
+        <div class="profile">
+            <img class="profile-avatar" src="img/SideBar/profile-avatar.jpg" alt="">
+
+            <div class="profile_header">
+                <div class="profile-name">Олег Тарасенко</div>
+                <div class="profile-prof">front-end developer</div>
+            </div>
+
+            <ul class="social">
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/9sh0gg0th/" target="_blank">
+                        <img src="img/SideBar/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://web.telegram.org/" target="_blank">
+                        <img class="social-link-telegram" src="img/SideBar/telegram.svg" alt="">
+                    </a>
+                </li><li class="social-item">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100078923537368" target="_blank">
+                        <img class="social-link-facebook" src="img/SideBar/facebook.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="profile-text">
+                <p>Front-end разработчик. Практик верстки сайтов.
+                    Созданием сайтов занимаюсь с 2022 года. Это мой первый сайт, который будет оставаться прототипом.</p>
+            </div>
+        </div><!-- profile -->
+
+        <nav class="nav nav--mobile">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="index.html">Main</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link has-subnav" href="#">Articles</a>
+                    <ul class="subnav">
+                        <li>
+                            <a class="subnav_link" href="#">Site create</a>
+                        </li>
+                        <li>
+                            <a class="subnav_link" href="#">Internet marketing</a>
+                        </li>
+                        <li>
+                            <a class="subnav_link" href="#">Video promotion</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="text.html">About me</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="text.html">Advertising</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="elf-bar.html">Special offer</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="signIn.html">Login</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Exit</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+    </div><!-- sideBar-content -->
+
+    <div class="sideBar-footer">
+        <a class="btn btn--red" href="works.html">
+            My works
+        </a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">
+            Message me
+        </button>
+    </div>
+</aside>
+
+    <div id="page" class="page">
+
+        <!-- main-search -->
+        <main class="main">
+    <div class="container">
+
+        <h1 class="page_title">Search results "Creating a site"</h1>
+
+        <article class="post">
+
+            <div class="post_content">
+                <h2 class="post_title">
+                    <a href="post.html">
+                        Как писать код быстро и безболезненно?
+                    </a>
+                </h2>
+                <p class="post_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            </div>
+
+            <div class="post_footer">
+                <ul class="post_data">
+                    <li class="post_data-item">
+                        <time datetime="2022-10-05">
+                            05-10-2022
+                        </time>
+                    </li>
+                    <li class="post_data-item">
+                        <a href="#">
+                            Site create
+                        </a>
+                    </li>
+                </ul>
+                <a class="post_read" href="post.html">go</a>
+            </div>
+
+        </article><!-- /.post -->
+
+        <article class="post">
+
+            <div class="post_content">
+                <h2 class="post_title">
+                    <a href="post.html">
+                        Как писать код быстро и безболезненно?
+                    </a>
+                </h2>
+                <p class="post_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            </div>
+
+            <div class="post_footer">
+                <ul class="post_data">
+                    <li class="post_data-item">
+                        <time datetime="2022-10-05">
+                            05-10-2022
+                        </time>
+                    </li>
+                    <li class="post_data-item">
+                        <a href="#">
+                            Site create
+                        </a>
+                    </li>
+                </ul>
+                <a class="post_read" href="post.html">go</a>
+            </div>
+
+        </article><!-- /.post -->
+
+        <article class="post">
+
+            <div class="post_content">
+                <h2 class="post_title">
+                    <a href="post.html">
+                        Как писать код быстро и безболезненно?
+                    </a>
+                </h2>
+                <p class="post_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            </div>
+
+            <div class="post_footer">
+                <ul class="post_data">
+                    <li class="post_data-item">
+                        <time datetime="2022-10-05">
+                            05-10-2022
+                        </time>
+                    </li>
+                    <li class="post_data-item">
+                        <a href="#">
+                            Site create
+                        </a>
+                    </li>
+                </ul>
+                <a class="post_read" href="post.html">go</a>
+            </div>
+
+        </article><!-- /.post -->
+    </div>
+</main>
+
+        <!-- contact-modal -->
+        <div id="contact-modal" class="modal">
+    <div class="modal_content modal_content--contact">
+        <form class="form form--auth" action="/" method="post" >
+
+            <button class="modal_close" type="button">
+                <img src="img/modal/vector.svg" alt="">
+            </button>
+
+            <div class="form_group form_group--md">
+                <input type="text" placeholder="Name" value="" class="form_control">
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group form_group--md">
+                <input type="email" placeholder="Email" value="" class="form_control">
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group form_group--md">
+                <textarea class="form_control form_control--textarea" name="" placeholder="Message text"></textarea>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_footer">
+                <div class="form_group form_group--md">
+                    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+
+        <ul class="modal_footer">
+           <li>
+                e-mail:
+                <a href="mailto:info@mywebsite.ua">info@mywebsite.ua</a>
+            </li>
+           <li>
+                тел:
+                <a href="tel:+380963285622">+38096-32-856-22</a>
+            </li>
+        </ul>
+
+    </div><!-- modal_content -->
+</div><!-- modal -->
+
+
+        <!-- story-modal -->
+        <div id="story-modal" class="modal">
+    <div class="modal_content modal_content--story" >
+        <video class="modal_video" src="" poster="https://via.placeholder.com/427x588"></video>
+    </div>
+</div>
+
+        <!-- share-modal -->
+        <div id="share-modal" class="modal">
+    <div class="modal_content" >
+        <form class="form form--auth" action="/" method="post" >
+
+            <button class="modal_close" type="button">
+                <img src="img/modal/vector.svg" alt="">
+            </button>
+
+            <ul class="social">
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/9sh0gg0th/" target="_blank">
+                        <img class="social-link-instagram social-link-instagram--share" src="img/SideBar/instagram.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a class="social-link" href="https://web.telegram.org/" target="_blank">
+                        <img class="social-link-telegram social-link-telegram--share" src="img/SideBar/telegram.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100078923537368" target="_blank">
+                        <img class="social-link-facebook social-link-facebook--share" src="img/SideBar/facebook.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+
+    </div><!-- modal_content -->
+</div><!-- modal -->
+
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>
